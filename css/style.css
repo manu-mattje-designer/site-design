@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@font-face{
+    font-family: TTNorms-Light;
+    src: url(../fonts/TTNorms/TTNorms-Light.otf);
+    font-family: TTNorms-Regular;
+    src: url(../fonts/TTNorms/TTNorms-Regular.otf);
+    font-family: Archive;
+    src: url(../fonts/archive.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Archive', sans-serif;
+}
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.header{
+    padding: 0 2%;
+    height: 70px;
+    background-color: #3752a5;
+}
+.header ul{
+    float: right;
+    list-style: none;
+    margin: 25px 0;
+}
+.header ul li{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 18px;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+.header ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.header ul li a:hover{
+    transition: 0.5s;
+    color:#ffb300;
+}
+
+.logo{
+    float: left;
+}
+/*Bem Vindo*/
+
+.bemVindo{
+    background-image: url(../imagens/imgfundo.png);
+    background-size: 100% 100%;
+    background-position: center;
+    min-height: 600px;
+}
+.texto{
+    max-width: 600px;
+    font-size: 28px;
+    padding: 170px 30px; 
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 3px black;
+}
+
+.texto p{
+    margin: 10px 0;
+    font-family: 'TTNorms-Light', sans-serif;
+}
+.texto span{
+    font-weight: bold;
+    font-family: 'TTNorms-Regular', sans-serif;
+}
+.texto button{
+    margin: 15px 0;
+    border: 0;
+    padding: 12px 25px;
+    border-radius: 20px;
+    background-color: #3752a5;
+    color: white;
+    font-size: 18px;
+    outline: transparent;
+    cursor: pointer;
+}
+.texto i{
+    font-size: 25px;
+}
+
+/*QUEM SOU?*/
+
+.quemSou{
+    display: flex;
+    background: rgb(255, 255, 255);
+    min-height: 500px;
+    max-width: 1024px;
+    padding: 15px;
+    font-size: 18px;
+    margin: 0 auto;
+}
+.quemSou-info{
+    width: 60%;
+    margin: auto 0;
+}
+.quemSou p{
+    margin: 5px;
+    max-width: 500px;
+    font-family: 'TTNorms-Regular', sans-serif;
+}
+.quemSou h2{
+    color: #3752a5;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.quemSou .image{
+    width: 40%;
+    margin: auto 0; 
+}
+.quemSou img{
+    width: 100%;
+}
+/*SEVIÇOS*/
+
+.serviços {
+    background: #ffb300;
+    display: flex;
+    
+    padding: 15px;
+}
+
+.serviços .serviços-title {
+    text-align: center;
+    margin: 35px 0;
+    color: #3752a5;
+    font-size: 35px;
+}
+
+.serviços .serviços-cards {
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.serviços .card {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.serviços .card svg , .card i {
+    width: 60px;
+    height: 60px;
+    margin: 20px 0;
+    transition: all 1s;
+}
+
+.serviços .card svg:hover{
+    stroke: #1D61DD;
+    transform: scale(1.1);
+}
+
+.serviços .card h3 {
+    font-weight: bold;
+}
+
+.serviços .card p {
+    color: rgb(255, 255, 255);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.serviços .card .card-content { 
+    text-align: center;
+}
+
+/*PORTIFÓLIO*/
+
+.portifolio{
+    text-align: center;
+}
+
+.behance{
+    max-width: 700px;
+    min-height: 400px; 
+    background-image: url('../imagens/behance.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 20px auto;
+}
+.portifolio h2{
+    color: #3752a5;
+    font-size: 35px;
+    margin: 20px 0;
+}
+
+.portifolio p{
+    font-family: 'Archive', sans-serif;
+    text-align: center;
+    font-size: 17px;
+}
+
+.portifolio button{
+    margin: 15px 0;
+    border: 0;
+    padding: 12px 25px;
+    border-radius: 20px;
+    background-color: #3752a5;
+    color: white;
+    font-size: 15px;
+    outline: transparent;
+    cursor: pointer;
+}
+
+footer{
+    height: 150px;
+    background: #2f2f2f;
+    text-align: center;
+}
+footer img{
+    margin-top: 20px;
+}
+footer ul{
+    margin: 10px 0;
+}
+footer ul li{
+    display: inline-block;
+    font-size: 28px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+
+/*RESPONSIVIDADE*/
+
+.header-mobile{
+    height: 70px;
+    background-color: #3752a5;
+    display: none;
+}
+.header-mobile i{
+    color: white;
+    font-size: 30px;
+    float: right;
+    margin: 20px 25px; 
+}
+.header-mobile ul{
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    background-color: #3752a5e1;
+    text-align: center;
+    display: none;
+}
+.header-mobile ul li{
+    margin: 10px 0;
+}
+
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    .header{
+        display: none;
+    }
+    .header-mobile{
+        display: block;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .bemVindo{
+        background-image: url('../imagens/fundomobile.png');
+    }
+    .texto{
+        padding: 0;
+        padding-top: 320px;
+        font-size: 25px; 
+    }
+    .quemSou{
+        flex-wrap: wrap;
+
+    }
+    .quemSou-info{
+        width: 100%;
+    }
+    .quemSou .image{
+        width: 100%;
+        max-width: 250px;
+        margin: 10px auto 5px auto;
+    }
+    .quemSou .img{
+        display: none;
+    }
+    .serviços .serviços-cards{
+        flex-wrap: wrap;
+    }
+    .serviços .card{
+        width: 100%;
+    }
+    .serviços .card svg{
+        margin: 10px 0;
+    }
+    .portifolio{
+        padding: 0 2%;
+    }
+    .behance{
+        background-image: url('../imagens/behancemobile.png');
+        min-height: 226px; 
+    }
+    footer ul li{
+        margin-right: 10px;
+    }
+}
+
